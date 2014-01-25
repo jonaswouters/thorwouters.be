@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hallo, ik ben Thor!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            body {
+                background: url('images/thor.jpg') no-repeat center right fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .page-header {
+                height: 100%;
+                margin: 0   ;
+            }
+            .page-header img.text {
+                position: absolute; bottom: 0;
+            }
+            .page-header img.stars {
+                position: absolute; right: 0; top: 60px;
+                width: 200px;
+            }
+            .modal-body img.stars {
+                position: absolute; right: 0; top: 20px;
+                width: 100px;
+            }
+            html, body {
+                height: 100%;
+            }
+
+            .fill {
+                min-height: 100%;
+                height: 100%;
+            }
+            .container {
+                padding: 0;
+                min-width: 100%;
+            }
+
+            @media (max-width: 780px) {
+                .navbar .nav {
+                    margin: 5px 10px 0 0;
+                }
+
+                .navbar .nav > li {
+                    float: left;
+                }
+
+                .page-header img.stars {
+                    width: 100px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container fill">
+            <div class="page-header">
+                <img class="text" src="images/hallothor.png" style="width: 100%; padding-bottom: 20px" />
+                <img class="stars" src="images/sterren.png" style="padding-right: 20px" />
+                <nav class="navbar navbar-default" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li><a href="http://www.monstersenpinguins.be/mgxbabyregistry/index/registry/id/ZZNHYI/">Geboortelijst</a></li>
+                        <li><a href="Javascript:$('#myModal').modal()" data-toggle="modal" data-target="#myModal">Pamperrekening</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Pamperrekening</h4>
+                        </div>
+                        <div class="modal-body">
+                            <strong>Thor Wouters</strong><br/>
+                            De Brulen 30<br/>
+                            2370 Arendonk<br/>
+                            <br/>
+                            IBAN: BE48 7450 6949 6327<br/>
+                            BIC: KREDBEBB
+                            <img class="stars" src="images/sterren.png" style="padding-right: 20px" />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
