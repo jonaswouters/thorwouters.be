@@ -74,18 +74,19 @@
                 <img class="stars" src="images/sterren.png" style="padding-right: 20px" />
                 <nav class="navbar navbar-default" role="navigation">
                     <ul class="nav navbar-nav">
+                        <li><a href="Javascript:$('#info').modal()" data-toggle="modal" data-target="#info">Info</a></li>
+                        <li><a href="Javascript:$('#pamperrekening').modal()" data-toggle="modal" data-target="#pamperrekening">Pamperrekening</a></li>
                         <li><a href="http://www.monstersenpinguins.be/mgxbabyregistry/index/registry/id/ZZNHYI/">Geboortelijst</a></li>
-                        <li><a href="Javascript:$('#myModal').modal()" data-toggle="modal" data-target="#myModal">Pamperrekening</a></li>
                     </ul>
                 </nav>
             </div>
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <!-- Modal pamperrekening -->
+            <div class="modal fade" id="pamperrekening" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="myModalLabel">Pamperrekening</h4>
+                            <h4 class="modal-title" id="pamperrekeningLabel">Pamperrekening</h4>
                         </div>
                         <div class="modal-body">
                             <strong>Thor Wouters</strong><br/>
@@ -101,7 +102,29 @@
                         </div>
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->
+            </div><!-- /.modal pamperrekening -->
+        </div>
+        <!-- Modal pamperrekening -->
+        <div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Pamperrekening</h4>
+                    </div>
+                    <div class="modal-body">
+                        <strong>Thor Wouters</strong><br/>
+                        <strong>Gewicht: </strong><br/>
+                        <strong>Lenge: </strong><br/>
+                        <strong>Geboren op: </strong><br/>
+                        <img class="stars" src="images/sterren.png" style="padding-right: 20px" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal pamperrekening -->
         </div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
